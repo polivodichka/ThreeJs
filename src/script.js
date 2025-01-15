@@ -144,6 +144,7 @@ loadAndSetTexture();
 
 // Environment Setup
 const rgbeLoader = new RGBELoader();
+// rgbeLoader.setDataType(THREE.UnsignedByteType);
 rgbeLoader.load("./textures/environmentMap/skies.hdr", (environmentMap) => {
   environmentMap.mapping = THREE.EquirectangularReflectionMapping;
   scene.background = environmentMap;
